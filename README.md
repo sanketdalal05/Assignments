@@ -1,4 +1,7 @@
 # Itransform Assignments
-main branch
-  |_ Github Assignments
-  |_MongoDB Assignments
+
+```
+ Main Branch
+   ├── GitHub Assignment
+   └── MongoDB Assignment
+```   
