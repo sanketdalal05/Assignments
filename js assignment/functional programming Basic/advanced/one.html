@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced</title>
+    </head>
+<body>
+
+    <script type="text/javascript">
+        function find(arr, f) {
+            if (arr.length > 0) {
+                if (f(arr[0])) {
+                    return arr[0]
+                }
+                return find(arr.slice(1), f);
+            }
+        }
+
+        function isEven(num) {
+            return (num % 2 == 0);
+        }
+
+        document.write(isEven(3) + "<br>");
+        document.write(isEven(4) + "<br>");
+        document.write(find([1, 3, 5, 4, 2], isEven));
+    </script>
+</body>
+</html>

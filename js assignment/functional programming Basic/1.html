@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Functional Programming </title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function composedValue(f1, f2, value) {
+            return f1(f2(value));
+        }
+        function square(x) {
+            return x * x;
+        }
+        function double(x) {
+            return x * 2;
+        }
+        document.write(composedValue(square, double, 5));
+    </script>
+</body>
+
+</html>
