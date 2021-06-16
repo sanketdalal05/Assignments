@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inputArray = [];
+        var size = window.prompt("Enter Size of List");
+
+        for (var i = 0; i < size; i++) {
+
+            inputArray[i] = prompt('Enter Element ' + (i + 1));
+        }
+
+        function totalofArray(arr) {
+            var total = 0;
+            for (var i = 0; i < arr.length; i++) {
+                total += parseInt(arr[i]);
+            }
+            return total;
+        }
+
+        document.write("Input List: " + inputArray + "<br>" + "Total of list: " + totalofArray(inputArray));
+    </script>
+</body>
+
+</html>

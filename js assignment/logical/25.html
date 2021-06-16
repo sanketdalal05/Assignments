@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = window.prompt("Enter first list length");
+        var b = window.prompt("Enter second list length");
+        var arr1 = [], arr2 = [];
+
+        for (var i = 0; i < a; i++) {
+            arr1[i] = parseInt(prompt('Enter Element ' + (i + 1)));
+        }
+
+        for (var i = 0; i < b; i++) {
+            arr2[i] = parseInt(prompt('Enter Element ' + (i + 1)));
+        }
+
+        function addLists(x, y) {
+            var c = [];
+            var sum = 0;
+            for (var i = 0; i < Math.max(x.length, y.length); i++) {
+                sum = x[i] + y[i];
+                c.push(sum);
+            }
+            return c;
+        }
+
+        function subLists(x, y) {
+            var c = [];
+            var sub = 0;
+            for (var i = 0; i < Math.max(x.length, y.length); i++) {
+                sub = x[i] - y[i];
+                c.push(sub);
+            }
+            return c;
+        }
+
+        function mulLists(x, y) {
+            var c = [];
+            var mul = 0;
+            for (var i =0; i < Math.max(x.length, y.length); i++) {
+                mul = x[i] * y[i];
+                c.push(mul);
+            }
+            return c;
+        }
+
+        document.write(addLists(arr1, arr2) + "<br>");
+        document.write(subLists(arr1, arr2) + "<br>");
+        document.write(mulLists(arr1, arr2) + "<br>");
+    </script>
+</body>
+
+</html>

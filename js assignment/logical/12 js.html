@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to reverse the order of the elements in the array.</p>
+
+<button onclick="myFunction()">Reverse</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["sanket", "omkar", "gaurav", "rajesh",10,15,20];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

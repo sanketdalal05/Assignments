@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="factDisplay"></p>
+</body>
+<script>
+(function newFact() {
+  var facts = ['"Have a BAD day!"', '"Have a GOOD day!"'];
+  var randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+})();
+</script>
+</html>
